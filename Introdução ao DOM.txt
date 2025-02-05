@@ -1,8 +1,27 @@
 Introdução ao DOM - aula 09
 
-DOM é document object...e só existe no navegador. Não no servidor.
+DOM é document object model...e só existe no navegador. Não no servidor.
 
 Hierarquia de elementos
+
+window
+  location
+  document
+    html
+      head
+        meta
+        title
+      body
+        h1
+        p
+        p
+          strong
+        div
+  history
+
+
+
+
 
 Pode acessar eles por:
 	Marca (TAG) -> getElementsByTagname()    plural ou singular []
