@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+
+    <!--
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> ...tirei isso e botei o addEventListener() no script
+    -->
+
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            /*
+            var a = document.getElementById('area')
+            
+            o var daqui não pode ser puxado em outros scripts, por isso vamos mover ele pra fora da função.. isso diminuirá linhas de codigo e uso da memória
+            */
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'green'
+        }
+
+        /*
+        Para detectar erros de escrita do codigo, abra o dev tools no navegador.. la vai dar erro de leitura e vai dizer qual linha que ta errada...
+        */
+    </script>
+</body>
+</html>
