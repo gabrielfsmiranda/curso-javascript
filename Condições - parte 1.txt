@@ -1,0 +1,36 @@
+Condições - parte 1
+
+
+if (condição) {
+	true
+} else {
+	false
+}
+
+
+Tipos de condição:
+
+Condição simples
+	if (condição) {true}
+
+Condição ...
+	if (condição) {true} else {false}
+
+_______________________________________________________________
+Rodar arquivo.js no node dentro do vscode -> F8
+
+Script teste: console.log('O console funcionou corretamente!')
+
+_______________________________________________________________
+Exercicios extra q fiz
+
+
+Posso substituir isso:
+
+var y = window.document.getElementById('checar');
+y.addEventListener('click', Verificar);
+
+
+...por isso: window.document.getElementById('checar').addEventListener('click', Verificar);
+
+posso? SIM!! testei e o chatgpt confirmou dps q nao teria problema tb kkkkkk

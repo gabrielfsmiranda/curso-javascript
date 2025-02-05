@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    <label for="país">Onde você nasceu? <input type="text" name="país" id="país"></label>
+    <input type="button" value="Verificar" id="checar">
+    <div id="res"></div>
+    <script>
+        /*
+        var y = window.document.getElementById('checar');
+        y.addEventListener('click', Verificar);
+        
+        troquei essa variavel intermediária por chamar direto o comando na linha de código seguinte (ambos funcionam)
+        */
+        window.document.getElementById('checar').addEventListener('click', Verificar);
+
+        var res = document.getElementById('res')
+
+        function Verificar() {
+            var nasceu = document.getElementById('país').value
+        
+            if (nasceu.toLowerCase() === 'brasil') {
+                res.innerHTML = `<p>Você é BRASILEIRO</p>`
+            } else {
+                res.innerHTML = `<p>Você é ESTRANGEIRO</p>`
+            }
+        }
+
+        /*
+        tentei tirar as variáveis de dentro da função, mas não tive sucesso
+        
+        na verdade, a função que define 'res' eu tirei e ficou normal...
+
+        qd tirei a definição de 'nasceu' que bugou.. talvez seja pq não posso tirar da função o que define ali as condições dentro dos parênteses da função?
+
+        ...seria bom perguntar no reddit ou no chatgpt...
+
+        chatgpt explicou... agora entendi.. somente dps de ativar a função de clicar que o dado será capturado e lido.. se tiver fora, o dado não será capturado quando a função de clicar for executada e sim "antes", porém antes isso ta vazio e aí não funciona o código.. sempre será um resultado diferente de 'brasil' kkkk acho que é isso?
+        vou mandar pro chatgpt corrigir ou confirmar meu raciocinio
+        
+        chatgpt confirmou.. chamei ele p tomar uma cerveja e ele aceitou.. basta esperar a tecnologia avançar pra esse evento!! kkkkkkk
+        */
+
+        /*
+        proximo passo é aprender a aproximar resultado pra se a pessoa digitar Brasiil ou Brasill kkk mas aí complica.. vamo com calma...
+        */
+    </script>
+</body>
+</html>
