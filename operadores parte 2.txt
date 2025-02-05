@@ -1,0 +1,85 @@
+Operadores - parte 2
+
+Operadores relacionais:
+
+5 > 2    ->    true
+7 < 4    ->    false
+8 >= 8   ->    true
+9 <= 7   ->    false
+5 == 5   ->    true
+4 != 4   ->    false
+
+Ex: 
+a = 8
+b = 15
+a <= b - 10    ->    false    (primeiro faz aritméticos e dps os relacionais)
+
+
+	Identidade:
+
+5 == 5    ->    true
+5 == '5'  ->    true    (Mesma grandeza apesar de um ser number e outro string)
+5 === '5' ->    false   (igualdade restrita...pra ser true, teria que ter mesmo valor e tipo)
+5 === 5   ->    true
+5 != '5'  ->    false
+5 != 5    ->    true    (desigual restrito)
+
+
+Ordem de precedência dos relacionais:
+	= ordem de escrita... quem for escrito primeiro será calculado antes
+		já os aritméticos tem ordem {[(** / * + -...
+
+
+Operadores lógicos:
+
+!  negação
+&& conjunção
+|| disjunção
+
+
+Ex:
+!    -> não quero algo específico
+		resultado satisfaz = true
+		não satisfaz = false
+
+&&   -> quero algo com característica x E y
+		true + true = true
+		true + false = false
+		false + true = false
+		false + false = false
+
+||   -> quero algo com característica x OU y
+		true + true = true
+		true + false = true
+		false + true = true
+		false + false = false
+
+Ordem das operações:
+	1º aritméticos
+	2º relacionais
+	3º lógicos
+	
+	...igual na matemática normalmente mesmo
+
+Se houver mais de um lógico, a ordem é essa:
+	1º negação     !    (NÃO)
+	2º conjunção   &&   (E)
+	3º disjunção   ||   (OU)
+
+
+Operadores ternários: 
+
+? 
+:
+
+É um teste lógico    ->    teste ? true : false
+
+Ex:
+	média >= 7.0 ? "Aprovado" : "Reprovado
+		Se média 7 ou mais, aprovado;
+		Se média menor que 7, reprovado.
+
+	var idade = 18
+	var teste = idade >= 18 ? 'Maior de idade' : 'Menor de idade'
+	teste
+	'Maior de idade'
