@@ -13,7 +13,7 @@ Tipos de condição:
 Condição simples
 	if (condição) {true}
 
-Condição ...
+Condição composta
 	if (condição) {true} else {false}
 
 _______________________________________________________________
