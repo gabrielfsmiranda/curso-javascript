@@ -1,0 +1,15 @@
+Introdução ao DOM - aula 09
+
+DOM é document object...e só existe no navegador. Não no servidor.
+
+Hierarquia de elementos
+
+Pode acessar eles por:
+	Marca (TAG) -> getElementsByTagname()    plural ou singular []
+	Id          -> getElementById()          singular
+	Nome        -> getElementsByName()       plural ou singular []
+	Classe      -> getElementsByClassName()  plural ou singular []
+	Seletor     -> querySelector()
+                    -> querySelectorAll()
+
+// lembrar de envolver as strings por aspa ''

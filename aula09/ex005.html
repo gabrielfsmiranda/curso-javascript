@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(66, 66, 241);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <!--DOM só funciona no navegador.. basicamente é a hierarquia dos elementos pelo que eu vi-->
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg" name="msg">Clique em mim</div><br>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p') [1]
+        /*
+        corpo.style.backgroundColor = 'black'
+        p1.style.color = 'yellow'
+        */
+
+        /*
+        var p1 = window.document.getElementsByTagName('p') [1] //0 é 1º p
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        */
+
+        /*
+        var p1 = window.document.getElementsByTagName('p') [1] //0 é 1º p
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
+        /*
+        
+        //window.alert('Está escrito assim: ' + p1.innerHTML)
+        //innerHTML preserva a formatação da tag strong
+
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+       
+        /*
+        Duas maneiras de alterar o innerText de um elemento:
+
+        d.innerText = 'Estou aguardando'
+        window.document.getElementById('msg').innerText = 'Olá'
+        
+        */
+
+        /*
+        var d = window.document.getElementsByName('msg')[0]
+        //d.innerText = 'Troquei o texto da div com JavaScript'
+        */
+
+        var d = window.document.querySelector('div#msg') //seletor do CSS
+        d.style.backgroundColor = 'black'
+    </script>
+</body>
+</html>
