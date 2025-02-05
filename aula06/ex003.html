@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 185);
+            color: white;
+            font: normal 25pt Arial;
+        }
+        
+        h1 {
+            color: rgb(224, 224, 107);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        /* 
+        
+        var n1 = window.prompt('Digite um número: ')
+        var n2 = window.prompt('Digite outro número: ')
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s)
+
+        (number + number) para adição
+        (string + string) para concatenação
+
+        window.prompt recebe dado como string...tem que converter pra number
+
+        //Number.parseInt(n)
+        //Number.parseFloat(n)
+        //parseInt(n)
+
+        */
+        
+
+        var n1 = Number.parseInt (window.prompt('Digite um número: '))
+        var n2 = Number.parseInt (window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + String(s)) //exemplo pra tornar string
+
+        //Se quiser real, tem q usar Float
+
+        //Number(n) pode ser usado agora no JS tb.. o JS decide se é float ou interger de acordo com oq recebe..
+        
+        /*
+        Para converter em string:
+
+        String(n)
+        n.toString()
+        */
+        
+        /*
+        template string ${s}
+        obs tive q usar a crase pra isso funcionar no node.js pelo terminal
+        */
+
+    </script>
+</body>
+</html>
