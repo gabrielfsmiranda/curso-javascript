@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    <label for="país">Onde você nasceu? <input type="text" name="país" id="país"></label>
+    <input type="button" value="Verificar" id="checar">
+    <div id="res"></div>
+    <script>
+        /*
+        var y = window.document.getElementById('checar');
+        y.addEventListener('click', Verificar);
+        
+        troquei essa variavel intermediária por chamar direto o comando na linha de código seguinte (ambos funcionam)
+        */
+        
+        window.document.getElementById('checar').addEventListener('click', Verificar);
+
+        function Verificar() {
+            var nasceu = document.getElementById('país').value
+        
+            if (nasceu.toLowerCase() === 'brasil') {
+                document.getElementById('res').innerHTML = `<p>Você é BRASILEIRO</p>`
+            } else {
+                document.getElementById('res').innerHTML = `<p>Você é ESTRANGEIRO</p>`
+            }
+        }
+
+        /*
+        simplifiquei ainda mais, diminuindo o código tirando a variável intermediária 'res' e puxando direto o comando pelo document.getElementById('res')
+
+        o chatgpt me ajudou a entender os pontos errados e compreender o funcionamento do código muito rápido!!
+        */
+    </script>
+</body>
+</html>
