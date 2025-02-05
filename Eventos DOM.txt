@@ -1,0 +1,23 @@
+Eventos DOM
+
+
+Alguns com movimento do mouse:
+
+mouseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout
+
+para ver mais event reference: https://developer.mozilla.org/en-US/docs/Web/Events
+
+
+Funções:
+
+bloco
+Só vão ser executadas quando evento descrito ocorrer
+Evento pode ser descrito no html dentro da tag ou no script
+
+function ação(param) {
+}
