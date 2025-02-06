@@ -1,3 +1,14 @@
+@charset "UTF-8";
+
+/*
+:root {
+    --cor-manha: #789fca;
+    --cor-tarde: #9d8549;
+    --cor-noite: #4a4d50;
+}
+Essa parte não serviu taaanto pq não da p chamar a var de outro arquivo kkkk mas deu pra revisar...e p copiar o codigo da cor
+*/
+
 body {
     background-color: rgb(70, 87, 240);
     font: normal 15pt Arial;
@@ -15,6 +26,17 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+    /*a img é inline.. então funciona tipo texto.. aaaaahh*/
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
 }
 
 footer {
