@@ -1,4 +1,4 @@
-Condições - parte 1
+Condições
 
 
 if (condição) {
@@ -15,6 +15,8 @@ Condição simples
 
 Condição composta
 	if (condição) {true} else {false}
+
+parte 2 -> Condições ANINHADAS (condição após outra)
 
 _______________________________________________________________
 Rodar arquivo.js no node dentro do vscode -> F8
