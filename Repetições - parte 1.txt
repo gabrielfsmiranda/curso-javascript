@@ -1,0 +1,57 @@
+Repetições - parte 1
+
+function comerPizza() {
+	comerFatia()
+	comerFatia()
+	comerFatia()
+	comerFatia()
+	comerFatia()
+	comerFatia()
+	comerFatia()
+	comerFatia()
+}
+
+Sequências:
+
+	Execução sequencial como a função de cima.
+
+
+Condições:
+
+	Execução de condições no meio das sequências.
+
+
+Laço:
+
+	Sequência -> condição -> volta num laço (loop) se for true ou segue se for false
+
+While (condição) {
+	bloco
+}
+
+
+Ex:
+
+function comerPizza() {
+	while (temFatia()) {
+		comerFatia()
+	}
+}
+
+...mais eficiente e serve pra pizza com qualquer número de fatias!
+
+
+-> Até agora: (estrutura de repetição com teste lógico no início)
+	teste e dps loop executando comando
+
+-> Mas é possível também: (estrutura de repetição com teste lógico no final)
+	executar comando e dps fazer teste pra ver se volta no loop
+
+ex:
+
+var fatias = 8
+
+do {
+    console.log(`Restam ${fatias} fatias`)
+    fatias --
+} while (fatias >= 0)
