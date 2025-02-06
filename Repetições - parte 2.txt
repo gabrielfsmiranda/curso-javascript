@@ -1,1 +1,21 @@
 Repetições - parte 2
+
+
+Inicialização -> teste lógico -> incremento e dps o loop
+
+
+for (inicio; teste; incremento) {
+
+}
+
+Ex:
+var c=1
+while (c<=10) {
+c++
+}
+
+isso é igual a:
+
+for (var c=1; c<=10; c++) {
+
+}
