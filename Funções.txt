@@ -26,6 +26,7 @@ ação(5)                      //chamada...(5) = parametro real
 
 
 Ex função par ou ímpar:
+
 function parimp(n) {
 	if (n%2==0) {
 		return 'par'
@@ -33,3 +34,42 @@ function parimp(n) {
 		return 'impar'
 	}
 }
+
+let res = parimp(11)
+
+
+Recursividade:
+
+-> uma função pode chamar ela mesma
+
+Ex fatorial:
+function fatorial(n) {
+    if (n ==1) {
+        return 1
+    } else{
+        return n * fatorial(n - 1)
+    }
+}
+
+console.log(fatorial(5)) 
+
+= 120
+= 5!
+= 5 * 4!
+= 5 * (5 - 4)!
+= 5 * 4 * 3 * 2 * 1
+
+
+
+Só pra rever o conceito da operação junto com substituição, é bom relembrar o fatorial que o prof fez antes desse:
+function fatorial(n) {
+    let fat = 1
+    for(let c = n; c > 1; c--) {
+        fat *= c
+    }
+    return fat
+}
+
+//5! = 5 x 4 x 3 x 2 x 1 = 120
+
+console.log(fatorial(5))
