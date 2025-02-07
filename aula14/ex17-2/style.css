@@ -1,5 +1,9 @@
+* {
+    padding: 5px;
+}
+
 body {
-    background-color: rgb(70, 87, 240);
+    background-color: rgb(25, 141, 106);
     font: normal 15pt Arial;
 }
 
