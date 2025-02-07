@@ -1,0 +1,81 @@
+Variáveis compostas
+
+________________________________________________
+Variáveis simples: armazenam só um valor por vez.
+
+Ex:
+let a1 = vaga1
+let a2 = vaga2
+let a3 = vaga3
+_________________________________________________
+Variáveis compostas: são capazes de armazenar vários valores em uma mesma estrutura.
+
+Ex do prof:
+let num = [5,8,4]
+
+isso significa:
+num0 = 5
+num1 = 8
+num2 = 4
+
+Array ou Vetor    = num
+Índice chave      = 0, 1, 2
+Conteúdo ou Valor = 5, 8, 4
+Elementos         = num0, num1, num2
+
+
+Adicionando elementos:
+
+Ex prof continuação:
+num[3] = 6
+	fica assim: num = [5, 8, 4, 6] => adicionou o 6 no num[3]
+
+
+
+Adicionando no final sem digitar o índice chave:
+num.push(7)
+	ficará assim agora: num = [5, 8, 4, 6, 7] -> adicionou 7 no final (no caso, criou o num 4 e colocou lá)
+
+
+
+Para saber comprimento do Vetor/Array:
+.length
+
+Ex:
+num.length = 5
+
+
+Para organizar elementos em ordem crescente:
+.sort()
+
+Ex:
+num.sort()
+	agora ficará assim: num = [4, 5, 6, 7, 8]
+
+
+Agora com repetições:
+Ao invés de:
+	console.log(num0)
+	console.log(num1)
+	console.log(num2)
+	console.log(num3)
+	...
+
+Usar isto:
+	for(let pos=0; pos<num.length; pos++) {
+		console.log(num[pos])
+	}
+
+Tem jeito mais simplificado ainda no Ecmascript:
+	for(let pos in num) {
+		console.log(num[pos])
+	}
+
+
+Para buscar valores dentro de um array:
+num.indexOf()
+
+Ex:
+let num = [4, 5, 6, 7, 8]
+num.indexOf(7) = 3     -> indica posição
+num.indexOf(3) = -1    -> indica que valor não existe dentro do array
