@@ -1,0 +1,35 @@
+Funções
+
+
+- Chamada
+- Parâmetros
+- Ação
+- Retorno
+
+-> funções são ações executadas assim que são chamadas ou em decorrência de algum evento.
+
+-> uma função pode receber parâmetros e retornar um resultado.
+
+
+Ex visto antes:
+function ação(param) {
+	...
+}
+
+Ex modificado:
+function ação(param) {       //parâmetro...(param) = parametro formal
+	...                  //ação
+	return res           //retorno
+}
+
+ação(5)                      //chamada...(5) = parametro real
+
+
+Ex função par ou ímpar:
+function parimp(n) {
+	if (n%2==0) {
+		return 'par'
+	} else {
+		return 'impar'
+	}
+}
