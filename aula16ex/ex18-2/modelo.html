@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Número de 1 a 100:
+                <input type="number" id="newnumtxt">
+                <input type="button" value="Adicionar" id="addnumbtn" onclick="Adicionar()">
+            </p>
+            <p>
+                <select id="numcheck" size="7"></select>
+            </p>
+            <p>
+                <input type="button" value="Finalizar" onclick="Finalizar()">
+                <input type="button" value="Resetar" onclick="Resetar()">
+            </p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+    <noscript>
+        ERRO! Ative o JavaScript para mostrar o conteúdo completo do site.
+    </noscript>
+</body>
+</html>
