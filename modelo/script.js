@@ -29,3 +29,45 @@ alert(Object.values(fruits))
 
 esse só mostra os valores
 */
+
+/*
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+myCar = new Car('Gol 1.6', 2018)
+
+console.log(myCar)
+
+console.log(myCar.age())
+*/
+
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+const date = new Date();
+let year = date.getFullYear();
+
+/*
+podia substituir as duas linhas de cima por
+let year = new Date().getFullYear();
+*/
+
+const myCar = new Car("Gol 1.6", 2018);
+
+console.log("My car is " + myCar.age(year) + " years old.")
