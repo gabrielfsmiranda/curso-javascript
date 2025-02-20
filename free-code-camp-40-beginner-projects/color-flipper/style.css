@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(70, 87, 240);
+    font: normal 15pt Arial;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+div button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: outset;
+    border-width: 3px;
+
+}
+
+div button:hover{
+    background-color: rgb(173, 173, 173);
+    color: white;
+}
+
+div button:active {
+    border-style: inset;
+}
+
+footer {
+    font-style: italic;
+}
