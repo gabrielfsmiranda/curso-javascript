@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(222, 230, 235);
+    font: normal 15pt Arial;
+    margin: 0;
+}
+
+header {
+    color: rgb(0, 68, 98);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header > h1 {
+    margin-bottom: 0px;
+}
+
+hr {
+    color: lightskyblue;
+    width: 70px;
+    border: 2px solid lightskyblue;
+    margin-top: 0px;
+}
+
+#carousel {
+    height: 300px;
+    text-align: center;
+}
+
+#divButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#buttonLeft, #buttonRight {
+    background-color: white;
+    border: none;
+    color: lightskyblue;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+
+#buttonSurpriseMe {
+    background-color: rgb(234, 244, 250);
+    border: 2px solid lightskyblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+#buttonLeft:hover, #buttonRight:hover, #buttonSurpriseMe:hover {
+    color: black;
+}
+
+#buttonLeft:active, #buttonRight:active, #buttonSurpriseMe:active {
+    color: red;
+}
+
+section {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.089);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
