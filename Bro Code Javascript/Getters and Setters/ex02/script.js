@@ -41,6 +41,10 @@ class Person{
     return this._lastName;
   }
 
+  get fullName(){
+    return this._firstName + " " + this._lastName;
+  }
+
   get age(){
     return this._age;
   }
@@ -56,4 +60,5 @@ const person = new Person("Gabriel", "Miranda", 29)
 
 console.log(person.firstName);
 console.log(person.lastName);
+console.log(person.fullName) //person tb herda o get fullName da classe Person
 console.log(person.age);
