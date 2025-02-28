@@ -70,3 +70,7 @@ fetch("people.json")
 
 // pega JSON de arquivo externo
 // ver chat salvo com o chat gpt onde me ensina a salvar JSON com o codigo JS!!!
+
+/*
+não ta dando p fazer fetch desse person.json  ...acho que tem q ter [] envolvendo o json msm.. checar dps o video de novo e acrescentar a observação aqui
+*/
