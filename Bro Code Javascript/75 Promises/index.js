@@ -63,3 +63,40 @@ walkDog().then(value => {console.log(value); return cleanKitchen()})
                   .then(value => {console.log(value); return takeOutTrash()})
                   .then(value => {console.log(value); console.log("You finished all the chores!")})
                   .catch(error => console.error(error));
+
+/*
+começou com callbacks e dps fez as promises de cima.. exemplo do codigo inicial da explicação abaixo
+
+
+function walkDog(callback){
+    setTimeout(() => {
+        console.log("You walk the dog 🐕")
+        callback()
+    }, 1500)
+}
+
+function cleanKitchen(callback){
+    setTimeout(() => {
+        console.log("You clean the kitchen 🧹")
+        callback()
+    }, 2500)
+}
+
+function takeOutTrash(callback){
+    setTimeout(() => {
+        console.log("You take out the trash ♻")
+        callback()    
+    }, 500)
+}
+
+walkDog(() => {
+    cleanKitchen(() => {
+        takeOutTrash(() => {
+            console.log("You finished all the chores!")
+        })
+    })
+})
+
+
+instead of using callbacks and getting int callback hell, using promises you will use method chaining as shown above outside this comentary
+*/
